@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace RoutesMustHaveVersionSample.Controllers;
+namespace NoExplicitRouteAttributesSample.Controllers;
 
 [Route("v1/sample")]
 public class SampleController

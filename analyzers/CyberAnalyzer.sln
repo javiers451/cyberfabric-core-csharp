@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberFabric.Analyzers.NoHtt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoHttpClientUsageSample", "Samples\NoHttpClientUsageSample\NoHttpClientUsageSample.csproj", "{B2D1BE04-8EF5-4AED-95EA-B827BA7515A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutesMustHaveVersionSample", "Samples\RoutesMustHaveVersionSample\RoutesMustHaveVersionSample.csproj", "{CA481916-EEB7-46CE-902E-2666B3B20845}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoExplicitRouteAttributesSample", "Samples\NoExplicitRouteAttributesSample\NoExplicitRouteAttributesSample.csproj", "{CA481916-EEB7-46CE-902E-2666B3B20845}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberFabric.Analyzers.NoTaskResult", "DE13_common_patterns\CyberFabric.Analyzers.NoTaskResult\CyberFabric.Analyzers.NoTaskResult.csproj", "{37E8D6B9-D660-4258-A6F1-5D147C24F765}"
 EndProject
