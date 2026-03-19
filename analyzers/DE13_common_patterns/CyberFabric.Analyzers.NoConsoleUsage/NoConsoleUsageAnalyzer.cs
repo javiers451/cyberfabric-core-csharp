@@ -67,16 +67,20 @@ public sealed class NoConsoleUsageAnalyzer : DiagnosticAnalyzer
                 if (syntaxContext.Node is not UsingDirectiveSyntax usingDirective)
                     return;
 
-                if (usingDirective.StaticKeyword.IsKind(SyntaxKind.StaticKeyword) &&
-                    usingDirective.Name is QualifiedNameSyntax qualifiedName &&
-                    qualifiedName.Right is IdentifierNameSyntax { Identifier.Text: "Console" } &&
-                    qualifiedName.Left is IdentifierNameSyntax { Identifier.Text: "System" })
+                if (usingDirective.StaticKeyword.IsKind(SyntaxKind.StaticKeyword))
                 {
-                    syntaxContext.ReportDiagnostic(
-                        Diagnostic.Create(
-                            Rule,
-                            usingDirective.GetLocation()
+                    var symbol = syntaxContext.SemanticModel
+                        .GetSymbolInfo(usingDirective.Name, syntaxContext.CancellationToken)
+                        .Symbol as INamedTypeSymbol;
+ 
+                    if (symbol is not null && SymbolEqualityComparer.Default.Equals(symbol, consoleType))
+                    {
+                        syntaxContext.ReportDiagnostic(
+                            Diagnostic.Create(
+                                Rule,
+                                usingDirective.GetLocation()
                             ));
+                    }
                 }
             }, SyntaxKind.UsingDirective);
         });
