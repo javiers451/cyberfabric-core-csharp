@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{F633
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoConsoleUsageSample", "Samples\NoConsoleUsageSample\NoConsoleUsageSample.csproj", "{F747CB97-362D-4E40-8820-1C965EA95E6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberFabric.Analyzers.NoExplicitRouteAttributes", "DE02_api_layer\DE0301_no_explicit_route_attributes\CyberFabric.Analyzers.NoExplicitRouteAttributes.csproj", "{F57DC8E8-B23B-46CC-BC99-4AE08839B359}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberFabric.Analyzers.NoExplicitRouteAttributes", "DE02_api_layer\DE0201_no_explicit_route_attributes\CyberFabric.Analyzers.NoExplicitRouteAttributes.csproj", "{F57DC8E8-B23B-46CC-BC99-4AE08839B359}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberFabric.Analyzers.NoHttpClient", "DE03_domain_layer\DE0301_no_http_client\CyberFabric.Analyzers.NoHttpClient.csproj", "{D6021B45-AC37-4422-806E-BFBB6127BA77}"
 EndProject

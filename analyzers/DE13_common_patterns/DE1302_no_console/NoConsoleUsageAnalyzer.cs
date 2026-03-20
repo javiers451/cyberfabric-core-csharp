@@ -56,8 +56,7 @@ public sealed class NoConsoleUsageAnalyzer : DiagnosticAnalyzer
                     operationContext.ReportDiagnostic(
                         Diagnostic.Create(
                             Rule,
-                            operationContext.Operation.Syntax.GetLocation(),
-                            "Remove all references to System.Console."));
+                            operationContext.Operation.Syntax.GetLocation()));
                 }
             }, OperationKind.Invocation, OperationKind.MethodReference, OperationKind.PropertyReference,
                 OperationKind.FieldReference, OperationKind.EventReference, OperationKind.ObjectCreation);
